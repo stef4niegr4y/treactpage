@@ -52,12 +52,16 @@ nav {
 
 a {
     text-decoration: none;
+    transition: all 300ms ease;
 }
 
 .link__hover-effect--blue:hover {
     color: rgb(109, 63, 237);
+    text-decoration: underline 2px;
+}
+
+.link__hover-effect--white:hover {
     text-decoration: underline;
-    transition: all 200ms ease;
 }
 
 li {
@@ -103,6 +107,15 @@ li {
 .action__link--anchor-primary:hover {
     background-color: rgb(69, 39, 149);
     transition: all 250ms ease;
+}
+
+.button__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: rgb(109, 63, 237);
+
 }
 
 .blue--text {
@@ -838,7 +851,7 @@ TESTIMONIALS
 }
 
 .testimonials__img {
-    width: 600px;
+    width: 100%;
 }
 
 .testimonials__description {
@@ -1135,16 +1148,13 @@ footer {
 
 .copyright--para {
     color: rgb(233, 223, 223);
-    padding-top: 24px;
-    align-items: center;
+    margin: 0 auto;
+    padding-right: 100px;
 }
 
 .social__fb, .social__twitter, .social__youtube {
-    color: black;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 50%;
+    filter: invert(1);
+    width: 24px;    
 }
 
 .social__link--wrapper-main {
@@ -1156,16 +1166,24 @@ footer {
     padding-right: 18px;
 }
 
-/* TABLETS, LARGE SMARTPHONES */
+/* DESKTOPS */
+
+@media (max-width: 972px) {
+    #testimonals {
+        width: 100vh;
+        max-width: 972px;
+    }
+}
 
 @media (max-width: 768px) {
+    .nav__link--list {
+        display: none;
+    }
 
+    .button__menu {
+        display: block;
+    }
 }
 
 /* SMALL PHONES */
 
-@media (max-width: 550px) {
-    .nav__link--list {
-        display: none;
-    }
-}
