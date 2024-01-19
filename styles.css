@@ -111,7 +111,7 @@ li {
 
 .button__menu {
     background-color: transparent;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     border: none;
     color: rgb(109, 63, 237);
@@ -195,7 +195,7 @@ h1 {
 }
 
 .landing__img {
-    width: 610px;
+    width: 100%;
     padding-bottom: 80px;
 }
 
@@ -254,6 +254,7 @@ FEATURES
 
 #features {
     margin-top: 180px;
+    margin-bottom: 180px;
     height: 100vh;
 }
 
@@ -351,7 +352,7 @@ QUALITY
 .quality__container {
     width: 100%;
     max-width: 1200px;
-    padding: 64px 24px 32px 24px;
+    padding: 80px 24px 32px 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -371,7 +372,7 @@ QUALITY
 }
 
 .quality__description{
-    max-width: 50%;
+    width: 50%;
 }
 
 .quality__description--para {
@@ -388,7 +389,7 @@ QUALITY
 }
 
 .quality__img {
-    width: 550px;
+    width: 100%;
 }
 
 .quality__btn, 
@@ -446,9 +447,7 @@ STEPS
 
 .steps__img {
     padding-top: 72px;
-    padding-right: 80px;
-    width: 600px;
-    height: 650;
+    width: 100%;
 }
 
 .steps__list {
@@ -509,7 +508,7 @@ VALUES
 .values__container {
     width: 100%;
     max-width: 1200px;
-    padding: 64px 24px 32px 24px;
+    padding: 32px 24px 32px 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -1169,9 +1168,67 @@ footer {
 /* DESKTOPS */
 
 @media (max-width: 972px) {
+
+    .row {
+    display: flex;
+    flex-direction: column;
+    }
+
+    h1 {
+       font-size: 32px;
+    }
+
+    #landing {
+    }
+
+    .landing__row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 48px;
+    }
+
+    .landing__description {
+        width: 100%;
+        padding-top: 48px;
+        padding-right: 32px;
+        text-align: center;
+    }
+
+    .features__container {
+        padding-top: 80px;
+    }
+
+    .quality__description {
+        width: 100%;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .quality__description--para {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .quality__img--wrapper {
+        width: 100%;
+        padding-top: 48px;
+        margin: 0 auto;
+    }
+
     #testimonals {
         width: 100vh;
         max-width: 972px;
+    }
+
+    .steps__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .steps__img--wrapper {
+        width: 60%;
     }
 }
 
