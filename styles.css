@@ -1398,3 +1398,32 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 780px) {
+    .steps__list {
+        padding: 0;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .values__description {
+        padding-right: 80px;
+    }
+
+    .values__list-wrapper {
+        padding-left: 32px;
+    }
+
+    .values__img--wrapper,
+    .testimonials__img--wrapper {
+        width: 100%;
+    }
+
+    .values__img,
+    .testimonials__img {
+        width: 440px;
+    }
+}
