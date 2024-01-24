@@ -81,6 +81,7 @@ li {
 }
 
 .nav__link--list {
+    max-width: 768px;
     letter-spacing: .045em;
     color: rgb(73, 71, 71);
     display: flex;
@@ -109,12 +110,13 @@ li {
     transition: all 250ms ease;
 }
 
-.button__menu {
+.menu__btn {
     background-color: transparent;
     font-size: 32px;
     text-align: center;
     border: none;
     color: rgb(109, 63, 237);
+    display: none;
 }
 
 .blue--text {
@@ -1164,9 +1166,18 @@ footer {
     padding-right: 18px;
 }
 
+
 /* DESKTOPS */
 
-@media (max-width: 972px) {
+@media (max-width: 888px) {
+
+    .nav__link--list {
+        display: none;
+    }
+
+    .menu__btn {
+        display: block;
+    }
 
     .row {
     display: flex;
@@ -1175,6 +1186,15 @@ footer {
 
     h1 {
        font-size: 32px;
+    }
+
+    .action__btn--wrapper {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .action__link--anchor-primary {
+        padding-right: 24px;
     }
 
     .landing__row,
@@ -1194,12 +1214,30 @@ footer {
         text-align: center;
     }
 
+    .landing__description--para {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #features {
+        margin-top: 480px;
+    }
+
     .features__container {
         padding-top: 80px;
     }
 
+    #steps {
+        margin-top: 300px;
+    }
+
+    #quality {
+        margin-top: 400px;
+    }
+
     .quality__description,
-    .steps__description {
+    .steps__description,
+    .values__description {
         width: 100%;
         padding-top: 100px;
         text-align: center;
@@ -1220,6 +1258,10 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .steps__list {
+        padding-left: 100px;
     }
 
     .steps__img--wrapper {
@@ -1249,7 +1291,7 @@ footer {
     }
 
     .values__title, .values__subtitle {
-        padding-right: 48px;
+        padding-right: 40px;
     }
 
     .values__img--wrapper {
@@ -1257,7 +1299,7 @@ footer {
     }
 
     .values__list-wrapper {
-        padding-left: 32px;
+        padding-left: 120px;
     }
 
     .values__wrapper--mini {
@@ -1268,15 +1310,24 @@ footer {
     align-items: center;
     }
     .values__description--para {
-        padding-bottom: 0;
+        margin: 0 auto;
     }
 
     .values__btn--wrapper {
         padding-right: 48px;
     }
 
+    #prices {
+        margin-top: 480px;
+    }
+
     .prices__container {
         padding-top: 560px;
+    }
+
+    #testimonials {
+        margin-top: 800px;
+        padding-left: 100px;
     }
 
     .testimonials__container {
@@ -1347,16 +1398,3 @@ footer {
         text-align: center;
     }
 }
-
-@media (max-width: 768px) {
-    .nav__link--list {
-        display: none;
-    }
-
-    .button__menu {
-        display: block;
-    }
-}
-
-/* SMALL PHONES */
-
