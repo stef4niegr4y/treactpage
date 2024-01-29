@@ -17,9 +17,9 @@ nav {
 .row {
     width: 100%;
     max-width: 1200px;
-    height: 100vh;
     display: flex;
     margin: 0 auto;
+    padding: 0 24px 0 24px;
 }
 
 .logo__img--wrapper {
@@ -67,6 +67,10 @@ a {
 li {
     color: black;
     list-style-type: none;
+}
+
+.container {
+    padding: 56px 24px 56px 24px;
 }
 
 .nav__container {
@@ -162,10 +166,10 @@ LANDING
 .landing__container {
     width: 100%;
     max-width: 1200px;
-    padding: 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 24px 56px 24px;
 }
 
 h1 {
@@ -253,20 +257,15 @@ FEATURES
 
 */
 
-#features {
-    margin-top: 180px;
-    margin-bottom: 180px;
-    height: 100vh;
-}
-
 .features__container {
     width: 100%;
     max-width: 1200px;
-    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    padding: 56px 0 56px 0;
+
 }
 
 .features__description {
@@ -345,18 +344,13 @@ QUALITY
 
 */
 
-#quality {
-    margin-top: 340px;
-    height: 100vh;
-}
-
 .quality__container {
     width: 100%;
     max-width: 1200px;
-    padding: 80px 24px 32px 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 56px 0 56px 0;
 }
 
 .quality__title {
@@ -417,19 +411,14 @@ STEPS
 
 */
 
-#steps {
-    margin-top: 160px;
-    height: 100vh;
-}
-
 .steps__container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 24px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     text-align: left;
+    padding: 56px 0 56px 0;
 }
 
 .steps__title {
@@ -444,6 +433,7 @@ STEPS
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin: 0 auto;
 }
 
 .steps__img {
@@ -501,18 +491,13 @@ VALUES
 
 */
 
-#values {
-    margin-top: 160px;
-    height: 100vh;
-}
-
 .values__container {
     width: 100%;
     max-width: 1200px;
-    padding: 32px 24px 32px 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 56px 0 56px 0;
 }
 
 .values__title {
@@ -537,10 +522,6 @@ VALUES
     padding-bottom: 24px;
 }
 
-.values__img--wrapper {
-    max-width: 50%;
-}
-
 .values__img {
     width: 550px;
 }
@@ -551,7 +532,7 @@ VALUES
 }
 
 .values__item {
-    padding-right: 24px ;
+    padding-left: 24px ;
 }
 
 .values__wrapper--mini {
@@ -594,19 +575,14 @@ PRICES
 
 */
 
-#prices {
-    margin-top: 360px;
-    height: 100vh;
-}
-
 .prices__container {
     width: 100%;
     max-width: 1000px;
-    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    padding: 56px 0 56px 0;
 }
 
 .prices__title {
@@ -830,24 +806,18 @@ TESTIMONIALS
 
 */
 
-#testimonials {
-    margin-top: 700px;
-    height: 100vh;
-}
 
 .testimonials__container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 56px 0 56px 0;
 }
 
 .testimonials__img--wrapper {
     width: 50%;
-    margin-top: 126px;
-
 }
 
 .testimonials__img {
@@ -856,7 +826,6 @@ TESTIMONIALS
 
 .testimonials__description {
     width: 50%;
-    margin-left: 60px;
 }
 
 .testimonials__title {
@@ -930,19 +899,15 @@ FAQS
 
 */
 
-#faqs {
-    margin-top: 260px;
-    height: 100vh;
-}
 
 .faqs__container {
     width: 100%;
     max-width: 1200px;
-    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    padding: 56px 0 56px 0;
 }
 
 .faqs__row {
@@ -1006,7 +971,7 @@ CONTACT
 */
 
 #contact {
-    margin: 400px 24px 180px 24px;
+    margin: 64px 0 64px 0;
 }
 
 .contact__container {
@@ -1018,6 +983,7 @@ CONTACT
     display: flex;
     align-items: center;
     margin: 0 auto;
+    padding: 56px 0 56px 0;
 }
 
 .contact__row {
@@ -1203,7 +1169,6 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 48px;
         margin: 0 auto;
     }
 
@@ -1219,27 +1184,10 @@ footer {
         margin: 0 auto;
     }
 
-    #features {
-        margin-top: 480px;
-    }
-
-    .features__container {
-        padding-top: 80px;
-    }
-
-    #steps {
-        margin-top: 300px;
-    }
-
-    #quality {
-        margin-top: 400px;
-    }
-
     .quality__description,
     .steps__description,
     .values__description {
         width: 100%;
-        padding-top: 100px;
         text-align: center;
     }
 
@@ -1250,8 +1198,8 @@ footer {
 
     .quality__img--wrapper {
         width: 100%;
-        padding-top: 48px;
         margin: 0 auto;
+        padding-top: 32px;;
     }
 
     .steps__container {
@@ -1260,47 +1208,29 @@ footer {
         flex-wrap: wrap;
     }
 
-    .steps__list {
-        padding-left: 100px;
-    }
 
     .steps__img--wrapper {
         width: 100%;
         width: 400px;
         margin: 0 auto;
-        padding-top: 64px;
-        padding-left: 32px;
-        margin-top: 80px;
+        padding: 32px 0 32px 0;
     }
 
     .steps__subtitle {
         padding-bottom: 32px;
     }
 
-    .steps__item--wrapper {
-        padding-left: 100px;
-    }
-
     #values {
-        margin-top: 600px;
-        height: 100vh;
+        margin-top: 100px;
         /* margin: 0 auto; */
         align-items: center;
-        padding-left: 124px;
         text-align: center;
-    }
-
-    .values__title, .values__subtitle {
-        padding-right: 40px;
     }
 
     .values__img--wrapper {
         padding-top: 72px;
     }
 
-    .values__list-wrapper {
-        padding-left: 120px;
-    }
 
     .values__wrapper--mini {
         padding-bottom: 16px;
@@ -1313,35 +1243,6 @@ footer {
         margin: 0 auto;
     }
 
-    .values__btn--wrapper {
-        padding-right: 48px;
-    }
-
-    #prices {
-        margin-top: 480px;
-    }
-
-    .prices__container {
-        padding-top: 560px;
-    }
-
-    #testimonials {
-        margin-top: 800px;
-        padding-left: 100px;
-    }
-
-    .testimonials__container {
-        padding-top: 1600px;
-    }
-
-    .faqs__container {
-        padding-top: 2000px;
-    }
-
-    #contact {
-    margin-top: 1000px;
-    }
-
     .personal-price, .business-price,
     .enterprise-price {
         width: fit-content;
@@ -1350,13 +1251,8 @@ footer {
     }
 
     #testimonals {
-        width: 100vh;
-        max-width: 972px;
-    }
-
-    .testimonials__img--wrapper {
         width: 100%;
-        padding: 100px 80px 40px 80px;
+        max-width: 972px;
     }
 
     .testimonials__description {
@@ -1374,17 +1270,6 @@ footer {
         width: 550px;
     }
 
-    #faqs {
-        margin-top: 640px;
-    }
-
-    .faqs__container {
-        padding-top: 1880px;
-    }
-
-    #contact {
-        margin-top: 2200px;
-    }
 
     .contact__btn1 {
         margin: auto;
@@ -1396,21 +1281,15 @@ footer {
 
     .copyright--para {
         text-align: center;
+        padding-bottom: 16px;
     }
 }
 
 @media (max-width: 780px) {
-    .steps__list {
-        padding: 0;
-    }
 
     .row {
         width: 100%;
         margin: 0 auto;
-    }
-
-    .values__description {
-        padding-right: 80px;
     }
 
     .values__list-wrapper {
@@ -1424,6 +1303,23 @@ footer {
 
     .values__img,
     .testimonials__img {
-        width: 440px;
+        max-width: 440px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .steps__title {
+        padding: 24px 0 24px 0;
+    }
+
+    .contact__description {
+        padding-left: 24px;
+    }
+
+    .social__link--wrapper,
+    .footer__logo--wrapper {
+        margin: 0 auto;
     }
 }
