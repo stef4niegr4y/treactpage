@@ -120,7 +120,7 @@ li {
     text-align: center;
     border: none;
     color: rgb(109, 63, 237);
-    display: none;
+    display: block;
 }
 
 .menu__backdrop {
@@ -134,6 +134,10 @@ li {
     /*display: flex;*/
     justify-content: center;
     align-items: center;
+    display: none;
+}
+
+.fa-bars {
     display: none;
 }
 
@@ -1178,6 +1182,9 @@ footer {
 /* DESKTOPS */
 
 @media (max-width: 888px) {
+    .fa-bars {
+        display: block;
+    }
 
     .nav__link--list {
         display: none;
@@ -1185,7 +1192,10 @@ footer {
 
     .menu__btn, .menu__backdrop,
     .menu__links {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .row {
